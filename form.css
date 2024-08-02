@@ -1,0 +1,12 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+body {
+    background-color: #004d40;
+    /* Equivalent to Tailwind's bg-teal-900 */
+}
+button{
+    background-color: #004d40;
+    
+}
+button:hover{
+    border-color:#004d40;
+}

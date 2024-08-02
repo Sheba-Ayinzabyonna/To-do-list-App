@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link href="form.css" rel="stylesheet" />
+  </head>
+  <body class="bg-teal-900 flex items-center justify-center h-screen">
+    <div class="w-full max-w-4xl">
+      <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <h1 class="text-2xl font-bold mb-4 text-center">To-Do List</h1>
+        <form id="todo-form" class="mb-4 grid grid-cols-2 gap-4">
+          <div class="col-span-2">
+            <input
+              id="new-todo"
+              type="text"
+              placeholder="Add new task..."
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+          </div>
+          <div>
+            <input
+              id="due-date"
+              type="date"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+          </div>
+          <div>
+            <input
+              id="location"
+              type="text"
+              placeholder="Location"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+          </div>
+          <div class="col-span-2">
+            <select
+              id="priority"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+              <option value="">Priority</option>
+              <option value="High">High</option>
+              <option value="Medium">Medium</option>
+              <option value="Low">Low</option>
+            </select>
+          </div>
+          <div class="col-span-2 flex items-center justify-between">
+            <button
+              type="submit"
+              class="bg-teal-900 text-white hover:border-teal-900 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+              Add
+            </button>
+          </div>
+        </form>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <h2 class="text-xl font-bold mb-2">To-Do</h2>
+            <ul
+              id="todo-list"
+              class="list-disc list-inside bg-gray-100 p-4 rounded">
+              <!-- To-Do items will appear here -->
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold mb-2">Completed</h2>
+            <ul
+              id="completed-list"
+              class="list-disc list-inside bg-gray-100 p-4 rounded">
+              <!-- Completed items will appear here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
